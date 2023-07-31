@@ -1,0 +1,45 @@
+Object Detection using OpenCV and SSD with MobileNetV2
+
+Description;
+This project demonstrates realtime object detection using the Single Shot Multibox Detector (SSD) model with the MobileNetV2 backbone. The system captures frames from the webcam and performs object detection on each frame using the pretrained SSD model. Detected objects are surrounded by bounding boxes, and the class name and detection confidence are displayed above each bounding box.
+
+Requirements;
+1.	Python 3.x
+2.	OpenCV (Open Source Computer Vision Library) with DNN module
+3.	Pre-trained SSD model with MobileNetV2 backbone
+4.	coco.names file containing the class names for the COCO dataset
+
+Installation;
+1. Clone or download the repository to your local machine.
+2. Install the required Python libraries:
+   #pip install opencv-python
+3. Download the pre-trained SSD model and the coco.names file:
+•	Pre-trained SSD model: [Download](https://github.com/opencv/opencv/wiki/TensorFlow-Object-Detection-API#use-existing-config-file-for-your-model)
+•	coco.names: [Download](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
+4. Save the `frozen_inference_graph.pb` and `ssd_mobilenet_v2_coco.pbtxt` files in the project directory.
+5. Save the `coco.names` file in the project directory.
+
+Usage;
+1. Run the `object_detection.py` script:
+   ```
+   python object_detection.py
+   ```
+2. The webcam will start capturing frames, and object detection will be performed in real-time.
+3. Detected objects will be highlighted with bounding boxes, and their class names and detection confidence will be displayed above the boxes.
+4. Press 'q' to exit the object detection process.
+
+Acknowledgments;
+This project uses the pre-trained SSD model with the MobileNetV2 backbone provided by the OpenCV library. The model is trained on the COCO dataset, which contains 80 different object classes.
+
+License;
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Contributing;
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+Author;
+Mafex(https://github.com/mafex11)
+
+Contact;
+For any questions or inquiries, please contact heaffec@gmail.com(mailto:heaffec@gmail.com).
+
